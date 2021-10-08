@@ -1,9 +1,9 @@
 //Exercicio1//
 //a//
-/*function meusDados() {
+function meusDados() {
   console.log ("Eu sou Luciana, tenho 32 anos, moro em Santana do Livramento, e sou estudante")
 }
-meusDados()*/
+meusDados()
 
 //b//
 /*function informacoesDeUmaPessoa(nome, idade, cidade, profisao) {
