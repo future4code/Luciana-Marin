@@ -114,20 +114,43 @@ checaStringsMesmoTamanho ()
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
+  const numeros = [1,2,3]
+  const primeiroElementoNumeros = numeros[0]
+  const frutas = ["laranja", "banana", "maca"]
+  const primeiroElementoFrutas = frutas[0]
+  return (primeiroElementoNumeros  + primeiroElementoFrutas)
 
 }
+retornaPrimeiroElemento ()
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
+  
+    const numeros = [1,2,3,4,5]
+    const ultimoElementoNumeros = numeros[4]
+    const frutas = ["laranja", "banana", "maca"]
+    const ultimoElementoFrutas = frutas[2]
+    return (ultimoElementoNumeros + ultimoElementoFrutas)
+  
+  }
+  retornaUltimoElemento ()
+  
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+ /*return arr
 }
+let arr = [1,2,3,4,5]
+arr.reverse()
+trocaPrimeiroEUltimo ()*/
+return arr 
+}
+let arr = ["Laranja", "Banana", "Maçã"]
+arr.reverse()
+trocaPrimeiroEUltimo ()
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
