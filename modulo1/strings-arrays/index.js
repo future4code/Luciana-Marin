@@ -1,9 +1,11 @@
+
 //Exercicio1//
 
 /*const nome = prompt ("qual e o seu nome?")
 const email = prompt ("qual e seu email?")
 const fraseTemplateString = `O email ${email} foi cadastrado com sucesso Seja bem vinda(o) ${nome} `
 console.log(fraseTemplateString)*/
+
 
 //Exercicio2//
 
@@ -41,6 +43,6 @@ console.log(novaListaDeTarefas)
 1. mensagens impresas a.undefined b.null c.11 d.3 e.(11) [3,19,5,6,7,8,9,10,11,12,..]
 Exercicio2 
 O valor impresso será "SUBI NUM ONIBUS EM MARROCOS"? 30
+//vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
 
-vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
 
