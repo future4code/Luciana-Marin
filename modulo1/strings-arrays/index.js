@@ -1,8 +1,10 @@
 
-<<<<<<< HEAD
 
 
-///
+
+
+
+//Exercicio1//
 
 /*const nome = prompt ("qual e o seu nome?")
 const email = prompt ("qual e seu email?")
@@ -12,10 +14,8 @@ console.log(fraseTemplateString)*/
 
 //Exercicio2//
 
-=======
 
 //Exercicio2//
->>>>>>> e8696dbf1c5eb82a11914ac7f29d2f67db389144
 
 /*const comidasPreferidas = [ "lasanha", "churrasco", "feijao", "risotto", "strogonoff" ]
 console.log(comidasPreferidas)
@@ -51,15 +51,9 @@ console.log(novaListaDeTarefas)
 1. mensagens impresas a.undefined b.null c.11 d.3 e.(11) [3,19,5,6,7,8,9,10,11,12,..]
 Exercicio2 
 O valor impresso será "SUBI NUM ONIBUS EM MARROCOS"? 30
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
 //vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
 
-//vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
-=======
-//vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
 
->>>>>>> e8696dbf1c5eb82a11914ac7f29d2f67db389144
+
+
 
