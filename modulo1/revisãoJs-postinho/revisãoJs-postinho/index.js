@@ -15,23 +15,9 @@ console.log(checarDesigualdade(1, 2));
 
 function checarIgualdade(a, b) {
     //  Sua lógica aqui
-
-            return `No comparador de igualdade ${a}===${b} é ${a === b}`
-        
-         }
-        
-        console.log(checarIgualdade(1, 2));
-        
-        
-
+}
 
 // c-)Faça uma função chamada "verificaSeEMaior"
-function verificaSeEMaior(a, b) {
-
-        return `No comparador de maior que  ${a} > ${b} é ${a > b}`
-    
-     }
-    
 
 console.log(verificaSeEMaior(321, 2156));
 
@@ -39,11 +25,11 @@ console.log(verificaSeEMaior(321, 2156));
 // Exercício 2------------------------------------------------------------------------------------
 //Escreva true or false para as comparações abaixo:
 // exemplo 1>2 = false
-// a-) 1==='1'= false
-// b-) 1=='1'= false
-// c-) 'a'==='b'= false
-// d-) 'b'>'a'= true
-// e-) 0!==null= false
+// a-) 1==='1'=
+// b-) 1=='1'=
+// c-) 'a'==='b'=
+// d-) 'b'>'a'=
+// e-) 0!==null=
 
 
 // CONDICIONAIS
@@ -51,31 +37,11 @@ console.log(verificaSeEMaior(321, 2156));
 // Exercício 3------------------------------------------------------------------------------------
 
 const cadastro = () => {
-    const usuarios = []
+    const usuario = []
 
     //  Sua lógica aqui
-    const nome = prompt("digite seu nome")
-
-const anoDeNascimento = Number(prompt("digite seu ano de nascimento"))
-const idade = 2021-anoDeNascimento
-const nacionalidade = prompt("digite sua nacionalidade").toLowerCase()
-
-const senha = prompt("digite uma senha, ela deve ter mais de seis digitos")
- 
-if (idade >=18 && senha.length >= 6 && nacionalidade === "brasileira"){
-  console.log(`Usuario ${nome} cadastrado com sucesso!`)
-  usuarios.push({nome, anoDeNascimento, nacionalidade, senha})
-console.log(usuarios)
 
 }
-
-else {
-  alert("nao foi possivel realizar o cadastro do usuario")
-
-}
- }
-
-
 console.log(cadastro());
 
 // Exercício 4-----------------------------------------------------------------------------------------------
@@ -161,26 +127,26 @@ const usuarios = [
 
 ]
 
-const cadastro = () => {
+const cadastroDesafio = () => {
     //  Sua lógica aqui
 }
-console.log(cadastro());
+console.log(cadastroDesafio());
 
-const login = () => {
+const loginDesafio = () => {
     //  Sua lógica aqui
 }
-console.log(login());
+console.log(loginDesafio());
 
-const primeiraDose = () => {
+const primeiraDoseDesafio = () => {
 //  Sua lógica aqui
 }
-console.log(primeiraDose())
+console.log(primeiraDoseDesafio())
 const segundaDose = (nomeDoUsuario) => {
     //  Sua lógica aqui
 }
-console.log(segundaDose("ALGUM NOME AQUI"));
+console.log(segundaDoseDesafio("ALGUM NOME AQUI"));
 
-const avisoAosAtrasados = () => {
+const avisoAosAtrasadosDesafio = () => {
     //  Sua lógica aqui
 }
-console.log(avisoAosAtrasados());
+console.log(avisoAosAtrasadosDesafio());
