@@ -15,21 +15,28 @@ console.log(checarDesigualdade(1, 2));
 
 function checarIgualdade(a, b) {
     //  Sua lógica aqui
+    return `No comparador de igualdade ${a}===${b} é ${a === b}`
 }
+console.log(checarIgualdade(1, 2));
 
 // c-)Faça uma função chamada "verificaSeEMaior"
+function verificaSeEMaior(a, b) {
+
+        return `No comparador de maior que  ${a} > ${b} é ${a > b}`
+    
+     }
 
 console.log(verificaSeEMaior(321, 2156));
 
 
 // Exercício 2------------------------------------------------------------------------------------
 //Escreva true or false para as comparações abaixo:
-// exemplo 1>2 = false
-// a-) 1==='1'=
-// b-) 1=='1'=
-// c-) 'a'==='b'=
-// d-) 'b'>'a'=
-// e-) 0!==null=
+// exemplo 1>2 = é false
+// a-) 1==='1'= é false
+// b-) 1=='1'=  é false
+// c-) 'a'==='b'= é false
+// d-) 'b'>'a'= é true
+// e-) 0!==null= é false
 
 
 // CONDICIONAIS
@@ -38,10 +45,31 @@ console.log(verificaSeEMaior(321, 2156));
 
 const cadastro = () => {
     const usuario = []
+    const nome = prompt("digite seu nome")
+
+    const anoDeNascimento = Number(prompt("digite seu ano de nascimento"))
+    const idade = 2021-anoDeNascimento
+    const nacionalidade = prompt("digite sua nacionalidade").toLowerCase()
+    
+    const senha = prompt("digite uma senha, ela deve ter mais de seis digitos")
+     
+    if (idade >=18 && senha.length >= 6 && nacionalidade === "brasileira"){
+      console.log(`Usuario ${nome} cadastrado com sucesso!`)
+      usuarios.push({nome, anoDeNascimento, nacionalidade, senha})
+    console.log(usuarios)
+    
+    }
+    
+    else {
+      alert("nao foi possivel realizar o cadastro do usuario")
+    
+    }
+     }
+
 
     //  Sua lógica aqui
 
-}
+
 console.log(cadastro());
 
 // Exercício 4-----------------------------------------------------------------------------------------------
