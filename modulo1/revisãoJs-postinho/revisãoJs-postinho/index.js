@@ -128,14 +128,20 @@ const segundaDose = (nomeDoUsuario) => {
         { nome: "Artur", imunizacao: "incompleta" },
         { nome: "Barbara", imunizacao: "incompleta" },
         { nome: "Carlos", imunizacao: "incompleta" }
-    ]
-
-    //  Sua lógica aqui
-
-
-}
-console.log(segundaDose("Barbara"));
-
+    ] 
+  const procurarPessoa = usuarios.filter((pessoa) => {
+    if (pessoa.nome === nomeDoUsuario){
+      pessoa.imunizacao = "completa"
+      return pessoa
+    }
+    })
+    console.log(procurarPessoa)
+  }
+  const nomePessoa = "Barbara"
+  segundaDose(nomePessoa)
+  console.log(segundaDose("Barbara"));
+  
+  
 // Exercício 7 --------------------------------------------------------------------------------------
 
 const avisoAosAtrasados = () => {
@@ -145,8 +151,14 @@ const avisoAosAtrasados = () => {
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
 
-    //  Sua lógica aqui
-
+const oiSumide = usuarios.filter((pessoa)=>{
+    if(pessoa.imunizacao === "incompleta"){
+        return true
+    }
+})
+const enviarMensagem = oiSumide.map((pessoa)=>{
+    console.log(`Olá ${pessoa.nome}! Sua imunização está ${pessoa.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
+})
 }
 console.log(avisoAosAtrasados());
 
