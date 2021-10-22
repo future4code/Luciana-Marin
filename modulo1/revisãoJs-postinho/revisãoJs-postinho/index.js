@@ -16,18 +16,18 @@ console.log(checarDesigualdade(1, 2));
 function checarIgualdade(a, b) {
     //  Sua lógica aqui
 
-            return `No comparador de igualdade ${a}===${b} é ${a === b}`
-        
-         }
-        console.log(checarIgualdade(1, 2));
-        
+    return `No comparador de igualdade ${a}===${b} é ${a === b}`
+
+}
+console.log(checarIgualdade(1, 2));
+
 
 // c-)Faça uma função chamada "verificaSeEMaior"
-function verificaSeEMaior(a, b) {
+function verificaSeEMaior(a, b) {
 
-        return `No comparador de maior que  ${a} > ${b} é ${a > b}`
-    
-     }
+    return `No comparador de maior que  ${a} > ${b} é ${a > b}`
+
+}
 
 console.log(verificaSeEMaior(321, 2156));
 
@@ -51,24 +51,24 @@ const cadastro = () => {
     const nome = prompt("digite seu nome")
 
     const anoDeNascimento = Number(prompt("digite seu ano de nascimento"))
-    const idade = 2021-anoDeNascimento
+    const idade = 2021 - anoDeNascimento
     const nacionalidade = prompt("digite sua nacionalidade").toLowerCase()
-    
+
     const senha = prompt("digite uma senha, ela deve ter mais de seis digitos")
-     
-    if (idade >=18 && senha.length >= 6 && nacionalidade === "brasileira"){
-      console.log(`Usuario ${nome} cadastrado com sucesso!`)
-      usuarios.push({nome, anoDeNascimento, nacionalidade, senha})
-    console.log(usuarios)
-    
+
+    if (idade >= 18 && senha.length >= 6 && nacionalidade === "brasileira") {
+        console.log(`Usuario ${nome} cadastrado com sucesso!`)
+        usuarios.push({ nome, anoDeNascimento, nacionalidade, senha })
+        console.log(usuarios)
+
     }
-    
+
     else {
-      alert("nao foi possivel realizar o cadastro do usuario")
-    
+        alert("nao foi possivel realizar o cadastro do usuario")
+
     }
-     }
-    
+}
+
 
 console.log(cadastro());
 
@@ -76,42 +76,42 @@ console.log(cadastro());
 
 const login = () => {
     //  Sua lógica aqui
-        const senhaValida = "labenu"
+    const senhaValida = "labenu"
     const senhaUsuario = prompt("Digite uma senha").toLowerCase()
     if (senhaValida === senhaUsuario) {
-    console.log("Usuario logado")
+        console.log("Usuario logado")
     }
     else {
-    console.log("Senha inválida")
+        console.log("Senha inválida")
     }
-    }
+}
 git
 console.log(login());
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
 const primeiraDose = () => {
-let tempo
- data = new Date()
- const nome =  prompt("digite seu nome")
- const vacina =  prompt("digite o nome da vacina que tomou")
+    let tempo
+    data = new Date()
+    const nome = prompt("digite seu nome")
+    const vacina = prompt("digite o nome da vacina que tomou")
 
- if(vacina.toLowerCase() === "coronavac") {
-     tempo = 28
- } else if (vacina.toLowerCase() === "astrazenica"){
-     tempo = 90
- } else if(vacina.toLowerCase() === "pfizer") {
-     tempo = 90
- }
+    if (vacina.toLowerCase() === "coronavac") {
+        tempo = 28
+    } else if (vacina.toLowerCase() === "astrazenica") {
+        tempo = 90
+    } else if (vacina.toLowerCase() === "pfizer") {
+        tempo = 90
+    }
 
- const milissegundos1dia = 86400000
- const hoje = data.getTime()
+    const milissegundos1dia = 86400000
+    const hoje = data.getTime()
 
- const dataAtualizada = new Date(hoje + (tempo * milissegundos1dia))
+    const dataAtualizada = new Date(hoje + (tempo * milissegundos1dia))
 
- const dataFormatada = dataAtualizada.toLocaleDateString("pt-br")
+    const dataFormatada = dataAtualizada.toLocaleDateString("pt-br")
 
- return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${dataFormatada}.`
+    return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${dataFormatada}.`
 }
 console.log(primeiraDose())
 
@@ -128,20 +128,20 @@ const segundaDose = (nomeDoUsuario) => {
         { nome: "Artur", imunizacao: "incompleta" },
         { nome: "Barbara", imunizacao: "incompleta" },
         { nome: "Carlos", imunizacao: "incompleta" }
-    ] 
-  const procurarPessoa = usuarios.filter((pessoa) => {
-    if (pessoa.nome === nomeDoUsuario){
-      pessoa.imunizacao = "completa"
-      return pessoa
-    }
+    ]
+    const procurarPessoa = usuarios.filter((pessoa) => {
+        if (pessoa.nome === nomeDoUsuario) {
+            pessoa.imunizacao = "completa"
+            return pessoa
+        }
     })
     console.log(procurarPessoa)
-  }
-  const nomePessoa = "Barbara"
-  segundaDose(nomePessoa)
-  console.log(segundaDose("Barbara"));
-  
-  
+}
+const nomePessoa = "Barbara"
+segundaDose(nomePessoa)
+console.log(segundaDose("Barbara"));
+
+
 // Exercício 7 --------------------------------------------------------------------------------------
 
 const avisoAosAtrasados = () => {
@@ -151,19 +151,74 @@ const avisoAosAtrasados = () => {
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
 
-const oiSumide = usuarios.filter((pessoa)=>{
-    if(pessoa.imunizacao === "incompleta"){
-        return true
-    }
-})
-const enviarMensagem = oiSumide.map((pessoa)=>{
-    console.log(`Olá ${pessoa.nome}! Sua imunização está ${pessoa.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
-})
+    const oiSumide = usuarios.filter((pessoa) => {
+        if (pessoa.imunizacao === "incompleta") {
+            return true
+        }
+    })
+    const enviarMensagem = oiSumide.map((pessoa) => {
+        console.log(`Olá ${pessoa.nome}! Sua imunização está ${pessoa.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
+    })
 }
 console.log(avisoAosAtrasados());
 
 
 // DESAFIO------------------------------------------------------------------------------------------
+
+const cadastroDesafio = () => {
+
+    const usuarios = [
+        {
+            nome: prompt ("Digite seu nome"),
+            idade: Number(prompt ("digite sua idade")),
+            nacionalidade: prompt ("digite sua nacionalidade").toLowerCase(),
+            senha: prompt ("digite sua senha ela deve conter no minimo seis digitos"),
+        
+        }
+      ]
+      const array = [usuarios]
+    if(array[0].usuarios.idade >= 18 && array[0].usuarios.senha.length >= 6 && array[0].usuarios.nacionalidade === "brasileira"){
+          console.log(`Usuario ${array[0].usuarios.nome} cadastrado com sucesso!`)
+        
+              }
+              
+              else {
+          alert("nao foi possivel realizar o cadastro do usuario")
+        
+        }
+         }
+    console.log(cadastroDesafio());
+    cadastroDesafio()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const usuarios = [
     {
@@ -203,8 +258,11 @@ const loginDesafio = () => {
 }
 console.log(loginDesafio());
 
+
+
+
 const primeiraDoseDesafio = () => {
-//  Sua lógica aqui
+    //  Sua lógica aqui
 }
 console.log(primeiraDoseDesafio())
 const segundaDose = (nomeDoUsuario) => {
