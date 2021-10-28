@@ -1,0 +1,45 @@
+h1{
+ color: green;
+}
+.links {
+    background-color: pink;
+    height: 70 px;
+    text-align: center;
+}
+.cabecalho {
+    background-color:violet;
+    height: 200px;
+    text-align: center;
+    padding: 40px;
+}
+
+
+.corpo {
+    font-family: cursive;
+    background-color: pink;
+    color: indigo;
+    height: 400px;
+}
+.rodape {
+    background-color:indianred;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape > p {
+    font-family: fantasy;
+    font-size: xx-large;
+    color: indigo;
+    width: 70%;
+    float: right;
+    text-align: left;
+    margin: 70px auto;
+}
+
+.img-rodape > img {
+    height: 60px;
+    margin: 10px;
+}
+
