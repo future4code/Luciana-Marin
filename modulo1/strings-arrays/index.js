@@ -1,10 +1,19 @@
 
+
+
+
+
+
+
 //Exercicio1//
 
 /*const nome = prompt ("qual e o seu nome?")
 const email = prompt ("qual e seu email?")
 const fraseTemplateString = `O email ${email} foi cadastrado com sucesso Seja bem vinda(o) ${nome} `
 console.log(fraseTemplateString)*/
+
+
+//Exercicio2//
 
 
 //Exercicio2//
@@ -45,5 +54,9 @@ Exercicio2
 O valor impresso será "SUBI NUM ONIBUS EM MARROCOS"? 30
 
 vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
+//vai imprimira frase em maiuscula e o numero 30 que refere a quantidade de items do arrey*/
+
+
+
 
 
