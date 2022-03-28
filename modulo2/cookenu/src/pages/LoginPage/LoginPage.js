@@ -5,33 +5,26 @@ import Button from '@material-ui/core/Button'
 import LoginForm from "./LoginForm"
 import { useHistory } from 'react-router-dom'
 import {goToSignUp} from "../../routes/coordinator"
-import useUnProtectedPage from "../../hooks/useUnprotectedPage"
+import useUnprotectedPage from '../../hooks/useUnprotectedPage';
 
-const LoginPage = () => {
-    useUnProtectedPage()
+const LoginPage = ({setRightButtonText}) => {
+    useUnprotectedPage()
     const history = useHistory()
     return (
         <ScreenContainer>
-            <LogoImage src={logo}/>
-            <LoginForm/>
-        
-
-        <SignUpButtonContainer>
-           
-        <Button
-                onClick={() => goToSignUp(history)}
-                type={"submit"}
-                fullWidth
-                variant={"outlined"}
-                color={"primary"}
-                margin={"normal"}
-
-            >
-            Não possui conta? Cadastre-se
-        </Button>
-           
-           
-        </SignUpButtonContainer>
+            <LogoImage src={logo} />
+            <LoginForm setRightButtonText={setRightButtonText}/>
+            <SignUpButtonContainer>
+                <Button
+                    onClick={() => goToSignUp(history)}
+                    type={"submit"}
+                    fullWidth
+                    variant={"text"}
+                    color={"primary"}
+                >
+                    Não possui conta? Cadastre-se
+                    </Button>
+            </SignUpButtonContainer>
         </ScreenContainer>
     )
 }

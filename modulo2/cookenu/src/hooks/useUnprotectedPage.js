@@ -2,7 +2,7 @@ import { useHistory } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import { goToRecipesList } from '../routes/coordinator'
 
-const useUnProtectedPage = () => {
+const useUnprotectedPage = () => {
   const history = useHistory()
   useLayoutEffect(() => {
     const token = localStorage.getItem('token')
@@ -12,4 +12,4 @@ const useUnProtectedPage = () => {
   }, [history])
 }
 
-export default useUnProtectedPage
+export default useUnprotectedPage

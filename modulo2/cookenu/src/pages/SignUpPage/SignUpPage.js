@@ -3,16 +3,17 @@ import logo from '../../assets/logo.png'
 import { ScreenContainer } from './styled'
 import SignUpForm from './SignUpForm'
 import { LogoImage } from './styled'
-import useUnProtectedPage from '../../hooks/useUnprotectedPage'
+import useUnprotectedPage from '../../hooks/useUnprotectedPage'
 
-const SignUpPage = () => {
-  useUnProtectedPage()
+const SignUpPage = ({setRightButtonText}) => {
+  useUnprotectedPage()
   return (
     <ScreenContainer>
       <LogoImage src={logo}/>
-      <SignUpForm />
+      <SignUpForm setRightButtonText={setRightButtonText}/>
     </ScreenContainer>
   )
 }
 
 export default SignUpPage
+
