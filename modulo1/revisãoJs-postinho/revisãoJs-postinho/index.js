@@ -114,7 +114,7 @@ const cadastro = () => {
       alert("nao foi possivel realizar o cadastro do usuario")
     
     }
-     }
+     
 
 
     //  Sua lógica aqui
