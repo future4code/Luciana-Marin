@@ -27,3 +27,15 @@ export const getResults = (url_link, set_data) => {
     })
 }
 
+export const getNumbers = (url_link, set_data, id) => {
+    const url = `${URL_BASE}${url_link}${id}`
+
+
+    axios.get(url)
+        .then((resp) => {
+            set_data(resp.data.numeros)
+        })
+        .catch((error) => {
+            window.alert(error.message)
+        })
+}

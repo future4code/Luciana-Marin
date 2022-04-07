@@ -1,15 +1,15 @@
 export const lotoColor = {
-    megasena: 'rgba(107, 239, 163, 1)',
+    megasena: '#6BEFA3',
 
-    quina: 'rgba(134, 102, 239, 1)',
+    quina: '#8666EF',
 
-    lotofacil: 'rgba(221, 122, 198, 1)',
+    lotofacil: '#DD7AC6',
 
-    lotomania: 'rgba(255, 171, 100, 1)',
+    lotomania: '#FFAB64',
 
-    timemania: 'rgba(90, 173, 125, 1)',
+    timemania: '#5AAD7D',
     
-    diadesorte: 'rgba(191, 175, 131, 1)',
+    diadesorte: '#BFAF83',
 
     textColor: 'rgba(225, 225, 255, 1)'
 }
