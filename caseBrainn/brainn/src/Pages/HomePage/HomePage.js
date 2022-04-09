@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react"
-import { getLotos, getNumbers, getResults } from "../../API/getResults"   
-import { StyledNumbersBall, StyledPageContainer } from "./styled"
+import logo from '../../assets/logo.png'
+
+import { getLotos, getNumbers, getResults } from "../../API/getResults"
 import { timerPicker } from "../../Utilities/timerPicker"
+import { StyledNumbersBall, StyledPageContainer, LogoLoterias } from "./styled"
+
 
 export const PageHome = () => {
     const [actualSelected, set_actualSelected] = useState({id: 0, nome: "MEGA-SENA"})
@@ -41,7 +44,7 @@ export const PageHome = () => {
         })
 
         const onChangeSelect = (event) => {
-            selectLoto.filter((item) => {
+            selectLoto.filter((item) =>{
                 if(event.target.value === item.id.toString()){
                     set_actualSelected({id: item.id, nome: item.nome.toUpperCase()})
                 }
@@ -52,11 +55,15 @@ export const PageHome = () => {
         <StyledPageContainer color={actualSelected.id}>
             <div className="area-select">
                 <select onChange={onChangeSelect}>
-                    <option selected disabled>SELECCIONE</option>
+                    <option selected disabled>SELECIONE</option>
                     {renderedSelect}
                 </select>
 
-                    <h1><ion-icon name="flower-sharp"/> {actualSelected.nome}</h1>
+
+                <LogoLoterias src={logo}  />
+                
+                <h1>{actualSelected.nome}</h1>
+                    
 
                 <div>
                     <h6> Concurso </h6>
@@ -76,4 +83,3 @@ export const PageHome = () => {
         </StyledPageContainer>
     )
 }
-    

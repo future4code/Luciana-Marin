@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch , Route } from "react-router-dom"
-import  PageHome  from "../Pages/HomePage"
-import  ErrorPage  from "../Pages/ErrorPage"
+import ErrorPage from "../Pages/ErrorPage/ErrorPage"
+import { PageHome } from "../Pages/HomePage/HomePage"
 
 export const Router = () => {
     return(

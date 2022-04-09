@@ -1,31 +1,21 @@
-import React from "react"
-import { useHistory } from "react-router-dom"
 
+import { useHistory } from "react-router-dom"
+import { ErrorImage, ErrorPageContainer } from "./styled"
+import error from '../../assets/error.png'
 
  const ErrorPage = () => {
     const history = useHistory()
 
 
     return (
-        <div>
+        <ErrorPageContainer>
 
-            <h1>Error</h1>
-            
-            <button onClick={ () => history.push('/')}>VOLVER</button>
+            <h1>Ops! Algo deu errado!</h1>
+            <ErrorImage src={error} />
+            <button onClick={ () => history.push('/')}>VOLTAR</button>
         
-        </div>
+        </ErrorPageContainer>
     )
 }
 
 export default ErrorPage
-
-
-
-
-
-
-
-
-
-
-
