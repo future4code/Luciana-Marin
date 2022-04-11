@@ -95,18 +95,6 @@ display: flex;
     }
 `
 
-export const LogoLoterias = styled.img`
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 300px;
-  margin-bottom: -155px;
-  margin-top: 60px;
-
-  
-
-`
 
 
 

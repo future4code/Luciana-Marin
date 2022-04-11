@@ -60,9 +60,9 @@ export const PageHome = () => {
                 </select>
 
 
-                <LogoLoterias src={logo}  />
+               {/* <LogoLoterias src={logo}  /> */}
                 
-                <h1>{actualSelected.nome}</h1>
+                <h1>🍀{actualSelected.nome}</h1>
                     
 
                 <div>
