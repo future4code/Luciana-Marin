@@ -4,7 +4,7 @@ Projeto desenvolvido como Case para o curso de Web Full Stack da Labenu, turma C
 
 Link do Surge
 
- polite-purpose.surge.sh
+ https://polite-purpose.surge.sh
  
  PROMOBIT
 Este projeto tem como objetivo criar um site de videos usando de resultados da API The Movie Database criando uma listagem dos filmes mais populares do dia e, ao clicar em um item dessa listagem, outra página com os detalhes do filme escolhido deveria ser exibida. No desafio é solicitada a paginação da lista.
